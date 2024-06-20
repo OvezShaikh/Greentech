@@ -8,13 +8,13 @@ import * as Yup from 'yup';
 import { useFormik } from 'formik';
 
 const Enquiry = () => {
-    // const [orgName, setOrgName] = useState('');
-    // const [name, setName] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [contact, setContact] = useState('');
-    // const [message, setMessage] = useState('');
-    // const [designation, setDesignation] = useState('')
-    // const [stateMessage, setStateMessage] = useState(null)
+    const [orgName, setOrgName] = useState('');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [contact, setContact] = useState('');
+    const [message, setMessage] = useState('');
+    const [designation, setDesignation] = useState('')
+    const [stateMessage, setStateMessage] = useState(null)
 
     const handleSubmit = async (e) => {
         e.preventDefault();
