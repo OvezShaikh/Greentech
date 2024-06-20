@@ -75,8 +75,8 @@ const Contact_us = () => {
           {Adress.map((Details, i) => {
             console.log(Details, i);
             return <>
-              <div className='flex columns-3xs h-full w-auto' key={i}>
-                <div className='flex-1 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"'>
+              <div className='flex columns-3xs h-full w-auto ' key={i}>
+                <div className='flex-1 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 m-3'>
                   <h4 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'> {Details.title} </h4>
                   <p className='font-normal text-gray-700 dark:text-gray-400'> {Details.Adress}:</p>
                   <p className='font-normal text-gray-700 dark:text-gray-400'> {Details.Contact_info}</p>

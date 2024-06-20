@@ -202,7 +202,7 @@ function NavListMenu({ navEle }) {
                 {
                     navEle === 'Products' ?
                         <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-                            <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+                            <ul className="grid grid-cols-2 gap-y-2 outline-none outline-0">
                                 {/* {renderItems} */}
                                 <NavbarList navListMenuItems={navListMenuItems} />
                             </ul>
@@ -211,7 +211,7 @@ function NavListMenu({ navEle }) {
                         (
                             navEle === 'Solutions' ?
                                 <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-                                    <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+                                    <ul className="grid grid-cols-1 gap-y-2 outline-none outline-0">
                                         {/* {renderItems} */}
                                         <NavbarList navListMenuItems={navListMenuItemsSolution} />
                                     </ul>
@@ -219,12 +219,12 @@ function NavListMenu({ navEle }) {
 
                                 :
                                 (navEle === 'Support' ? <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-                                    <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+                                    <ul className="grid grid-cols-2 gap-y-2 outline-none outline-0">
                                         {/* {renderItems} */}
                                         <NavbarList navListMenuItems={navListMenuItemsSupport} />
                                     </ul>
                                 </MenuList> : <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-                                    <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+                                    <ul className="grid grid-cols-2 gap-y-2 outline-none outline-0">
                                         {/* {renderItems} */}
                                         <NavbarList navListMenuItems={navListMenuItemsAbout} />
                                     </ul>
@@ -357,7 +357,7 @@ const MegaMenuWithHover = () => {
                 <IconButton
                     variant="text"
                     color="blue-gray"
-                    className="lg:hidden ml-10"
+                    className="lg:hidden ml-32"
                     onClick={() => setOpenNav(!openNav)}
                 >
                     {openNav ? (
@@ -374,9 +374,9 @@ const MegaMenuWithHover = () => {
                 </div>
             </div>
             <Collapse open={openNav}>
-                <div className="p-10 lg:hidden">
+                <div className="p-10 lg:hidden flex flex-col ">
                     <NavList />
-                    <button className='lg:hidden bg-green-600 font-bold text-white duration-500 px-6 py-2 mx-4 hover:bg-green-700 rounded ml-auto'>
+                    <button className='lg:hidden bg-green-600 font-bold text-white duration-500 px-6 py-2 mx-4 hover:bg-green-700 rounded ml-1 flex flex-col'>
                         {/* <a href="/Enquiry"> Enquiry </a>| */}
                         <Link to='/EnquiryForm'>Enquiry</Link>
                     </button>

@@ -66,7 +66,7 @@ const Navbar = () => {
                 </svg>
               </button>
                 {/* About Dropdown */}
-              <ul className={`absolute top-full left-0 mt-1 w-56 origin-top-right rounded-md bg-white ring-1 ring-black ring-opacity-5 focus:outline-none
+              <ul className={`absolute top-full left-0 mt-1 w-36 origin-top-right rounded-md bg-white ring-1 ring-black ring-opacity-5 focus:outline-none
                               ${IsMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
                 {About.map((item, index) => (
                   <li key={index} className="text-gray-700 block px-4 py-2 text-sm">
